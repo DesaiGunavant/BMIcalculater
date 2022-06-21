@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <TextView
+            android:id="@+id/txtBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="BMI Calculator"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layBMI"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="15sp">
+
+        <TextView
+            android:id="@+id/txtage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AGE"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="AGE"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layhight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layage"
+        android:layout_margin="10sp">
+
+        <TextView
+            android:id="@+id/txthight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="HIGHT"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edthight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="In FEET"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layhight"
+        android:layout_margin="10sp">
+
+        <TextView
+            android:id="@+id/txtweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="WEIGHT"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="In Kg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layweight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="show" />
+
+    <LinearLayout
+        android:id="@+id/layWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnshow"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:id="@+id/txtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="WEIGHT"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtWeight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="     kg     "
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layHight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layWeight"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:id="@+id/txtHight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="HIGHT"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtHight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtmeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="  meter  "
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layBmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layHight"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:id="@+id/txtBmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BMI"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtBmi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtBmi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="   bmi    "
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
